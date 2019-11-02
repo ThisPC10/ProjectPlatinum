@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="50.0" minWidth="300.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #2b3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="50.0" style="-fx-background-color: #323639;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton focusTraversable="false" onAction="#goBack" prefHeight="40.0" prefWidth="40.0" ripplerFill="WHITE" style="-fx-background-color: #323639; -fx-background-radius: 20;" stylesheets="@application.css" text="  " textFill="#e8eaed">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CHEVRON_LEFT" size="28" />
+               </graphic>
+            </JFXButton>
+            <JFXButton focusTraversable="false" onAction="#goForward" prefHeight="40.0" prefWidth="40.0" ripplerFill="WHITE" style="-fx-background-color: #323639; -fx-background-radius: 20;" stylesheets="@application.css" text=" " textFill="#e8eaed">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CHEVRON_RIGHT" size="28" />
+               </graphic>
+            </JFXButton>
+            <JFXButton focusTraversable="false" onAction="#btnRel" prefHeight="40.0" prefWidth="40.0" ripplerFill="WHITE" style="-fx-background-color: #323639; -fx-background-radius: 20;" stylesheets="@application.css" text=" " textFill="#e8eaed">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ROTATE_RIGHT" size="28" />
+               </graphic>
+            </JFXButton>
+            <JFXButton focusTraversable="false" onAction="#btn1" prefHeight="40.0" prefWidth="40.0" ripplerFill="WHITE" style="-fx-background-color: #323639; -fx-background-radius: 20;" stylesheets="@application.css" text=" " textFill="#e8eaed">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="30" />
+               </graphic>
+            </JFXButton>
+            <HBox prefHeight="40.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="searchbar" prefHeight="40.0" prefWidth="423.0" style="-fx-background-radius: 20; -fx-background-color: #282c2f; -fx-text-fill: white;" stylesheets="@application.css" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton focusTraversable="false" onAction="#goGo" prefHeight="40.0" prefWidth="60.0" ripplerFill="WHITE" style="-fx-background-color: #282c2f; -fx-background-radius: 20;" stylesheets="@application.css" text="GO" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <WebView fx:id="webView" layoutX="6.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+   </children>
+</AnchorPane>
