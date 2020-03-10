@@ -21,7 +21,7 @@ public class MainController implements Initializable {
 	    
 	@Override		//Entry Point
 	public void initialize(URL location, ResourceBundle resources) {
-			String[] possibleWords = { "google.com","youtube.com","facebook.com","wikipedia.org","reddit.com","yahoo.com","amazon.com","twitter.com","instagram.com","netflix.com","twitch.tv","linkedin.com","microsoft.com","ebay.com","web.whatsapp.com","spotify.com", "amazon.in", "in.bookmyshow.com","cricbuzz.com","devfolio.co","gmail.com","hotstar.com","primevideo.com","quora.com","zomato.com"}; //autocomplete data
+			String[] possibleWords = { "google.com","youtube.com","facebook.com","wikipedia.org","reddit.com","yahoo.com","amazon.com","twitter.com","instagram.com","netflix.com","twitch.tv","linkedin.com","microsoft.com","ebay.com","whatsapp.com","spotify.com" }; //autocomplete data
 			engine = webView.getEngine();	//Webkit engine
 			homeMethod();		//WannabeMomentum call
 			TextFields.bindAutoCompletion(searchbar, possibleWords);		//searchbar autocomplete
@@ -61,7 +61,7 @@ public class MainController implements Initializable {
 			engine.load(txtchk);		//use raw textfield content
 			return;	// will stop the next else if
 		}
-		else if(txtchk.contains(".com")	||txtchk.contains(".org") ||txtchk.contains(".tv") ||txtchk.contains(".io") ||txtchk.contains(".net") || txtchk.contains(".in") || txtchk.contains(".info") ||txtchk.contains(".uk") ||txtchk.contains(".xyz"))
+		else if(txtchk.contains(".com")	||txtchk.contains(".org") ||txtchk.contains(".tv") ||txtchk.contains(".io") ||txtchk.contains(".net"))
 		{
 			String search = "https://" + txtchk;		//concat https
 			engine.load(search);
