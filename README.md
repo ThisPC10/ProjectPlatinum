@@ -13,7 +13,7 @@ ___
 ![](https://github.com/ThisPC10/ProjectPlatinum/blob/master/Platinum_ALPHA/Assets/Screenshots/OP/Splash.png)
 ### Momentum Like Homepage (But Webkit Sucks At Loading CSS So No Background Image Is Used)
 ![](https://github.com/ThisPC10/ProjectPlatinum/blob/master/Platinum_ALPHA/Assets/Screenshots/OP/Home.png)
-### Default Search Engine Is Google (Sorry Bing 🙃 )
+### Default Search Engine Is Google (Sorry Bing :) )
 ![](https://github.com/ThisPC10/ProjectPlatinum/blob/master/Platinum_ALPHA/Assets/Screenshots/OP/Google.png)
 ### Autocomplete
 ![](https://github.com/ThisPC10/ProjectPlatinum/blob/master/Platinum_ALPHA/Assets/Screenshots/OP/AutoComplete.png)

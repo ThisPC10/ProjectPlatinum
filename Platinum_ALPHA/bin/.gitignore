@@ -1,1 +1,6 @@
 /application/
+.idea/
+*.iml
+/out/
+*.class
+*.jar
